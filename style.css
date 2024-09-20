@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 2s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="password"], textarea, input[type="file"] {
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button[class=active ] {
+    background: #e9ba3a;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav button {
+    margin: 0 10px;
+}
+
+.tab-content {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+#loginAdm {
+    width: 120px;
+    padding: 5px 0;
+    background: none;
+    color: #007BFF;
+}
+
+#loginAdm:hover {
+    border-bottom: 1px solid #007BFF;
+    background: none;
+}
+
+.pending {
+    background: #fadc8b;
+}
+
+.pending:hover {
+    background: #ad975b;
+}
+
+.done {
+    background: #9fec7b;
+}
+
+.done:hover {
+    background: #76b15b;
+}
+
+.cancel {
+    background: #ec7b7b;
+}
+
+.cancel:hover {
+    background: #9c5252;
+}
+
+#pending h2 {
+    background: #fadc8b;
+    color: #ffffff;
+    width: 120px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+#done h2 {
+    background: #9fec7b;
+    color: #ffffff;
+    width: 120px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+#cancel h2 {
+    background: #ec7b7b;
+    color: #ffffff;
+    width: 120px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+#loginPage {
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    background: #ffffff;
+    width: 40%;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    border: 2px solid #222222;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+#loginPage .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginPage .form input, #loginPage .form .loginButton {
+    width: 100%;
+}
+
+#loginPageCard {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background: #222222c9;
+}
+
+.closeLogin {
+    width: 30px;
+    height: 30px;
+    color: #222222;
+    background: none;
+    border: none;
+    font-weight: bolder;
+}
+
+.closeLogin:hover {
+    background: none;
+    border: none;
+}
+
+.closeLogin i {
+    font-size: 20px;
+}
+
+#adminClose {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 20px;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
